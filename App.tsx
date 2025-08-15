@@ -165,11 +165,14 @@ const App: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen bg-slate-900 text-white p-4 sm:p-6 md:p-8 flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://picsum.photos/seed/adventurebg/1920/1080')" }}>
+    <main className="min-h-screen bg-slate-900 text-white p-4 sm:p-6 md:p-8 flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: "url('https://picsum.photos/seed/adventurebg/1920/1080')" }}>
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
       <div className="relative w-full z-10 flex items-center justify-center">
         {renderContent()}
       </div>
+      <footer className="absolute bottom-4 left-1/2 -translate-x-1/2 text-slate-400 font-lora text-sm z-10">
+        Made with Gemini
+      </footer>
     </main>
   );
 };
